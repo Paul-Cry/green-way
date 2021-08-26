@@ -530,6 +530,7 @@ body {
 .application__input:not(:last-child) {
   margin-bottom: 17px;
 }
+
 .application__button {
   display: block;
   margin: 0 auto;

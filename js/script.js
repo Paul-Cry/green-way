@@ -77,6 +77,7 @@ SendForm.onsubmit = async (e) => {
     let FormJSON = FormDataToJSON(SendForm)
     if (ValidatePhone(FormJSON.Phone)) {
         PhoneError.innerText = ``
+
         console.log('SENDED', FormJSON)
         fetch(`https://api.telegram.org/bot1984186607:AAGbMDG9g8fTQ82qveill-DcDtXai2dtlfc/sendMessage?chat_id=-1001588155373&text=   🆕 Новая заявка 🆕
         %0A  Имя - ${FormJSON.FirstName}

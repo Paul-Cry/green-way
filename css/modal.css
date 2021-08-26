@@ -63,6 +63,7 @@
 
     transition: .2s;
     cursor: pointer;
+
 }
 
 .form__btn, .openModal:nth-of-type(1) {
