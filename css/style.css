@@ -1,17 +1,17 @@
 @charset "UTF-8";
 @font-face {
   font-family: "GothamPro";
-  src: url("/fonts/GothamPro-Light.woff");
+  src: url("../fonts/GothamPro-Light.woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "GothamPro";
-  src: url("/fonts/GothamPro-Medium.woff");
+  src: url("../fonts/GothamPro-Medium.woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "GothamPro";
-  src: url("/fonts/GothamPro-Bold.woff");
+  src: url("../fonts/GothamPro-Bold.woff");
   font-weight: 600;
 }
 html {
@@ -80,17 +80,17 @@ body {
   margin-right: 20px;
 }
 .icon:nth-child(1) {
-  background-image: url("/img//va.png");
+  background-image: url("../img/va.png");
   width: 31px;
   height: 31px;
 }
 .icon:nth-child(2) {
-  background-image: url("/img/telg.png");
+  background-image: url("../img/telg.png");
   width: 31px;
   height: auto;
 }
 .icon:nth-child(3) {
-  background-image: url("/img/inst.png");
+  background-image: url("../img/inst.png");
   width: 31px;
   height: 31px;
 }
@@ -245,14 +245,11 @@ body {
 
 .joing {
   border: 1px solid;
-  overflow: hidden;
   -webkit-transform: translateX(-1.5px);
           transform: translateX(-1.5px);
-  height: 550.63px;
   color: white;
   margin-bottom: 29px;
   width: 100%;
-  position: relative;
 }
 .joing-perpective {
   height: 100%;
@@ -265,7 +262,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/img/img_joing.png");
+  background-image: url("./img/img_joing.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -497,12 +494,14 @@ body {
 }
 
 .application {
-  width: 100%;
-  height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/img/горы 1.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/горы 1.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/горы 1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 200px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .application-wrap {
   padding: 19px 21px 30px;
@@ -531,6 +530,7 @@ body {
 .application__input:not(:last-child) {
   margin-bottom: 17px;
 }
+
 .application__button {
   display: block;
   margin: 0 auto;
@@ -538,4 +538,16 @@ body {
   border-radius: 5px;
   border: none;
   background-color: white;
+}
+.openModal:hover,
+.openModal:focus {
+  color: white;
+  background: #203041;
+  border-color: #2c3e50;
+  transform: translateY(-.2rem);
+}
+.white {
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  border-color: #ffffff;
 }
