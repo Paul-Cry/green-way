@@ -18,9 +18,19 @@ let SendModal = new tingle.modal({
     }
 });
 
+
+let phone = document.querySelector('.validinput')
+
+
+
+
+
+
+
+
+
 function ValidatePhone(Phone) {
-    let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
-    return regex.test(Phone);
+    return Phone
 }
 
 function FormDataToJSON(FormElement) {
@@ -52,7 +62,7 @@ SendModal.setContent(`
                 <div class="form__item">
                     <h2 class="form__title">Телефон</h2>
                     <div class="form__name">
-                        <input type="tel" class="form__input"  placeholder="📱  Телефон"  maxlength="20" required>
+                        <input type="tel" class="form__input validinput"  placeholder="📱  Телефон"  maxlength="20" required>
                         
                     </div>
                     <div class="form__errors" id="PhoneInputError">
@@ -61,7 +71,7 @@ SendModal.setContent(`
                     
                 </div>
                 <div class="form__btn-wrap">
-                    <input type="submit" value="Отправить &rarr;" class="form__btn">
+                    <input type="submit" value="Отправить &rarr;" class="form__btn buttonForm">
                     
                 </div>
             </form>
@@ -90,6 +100,13 @@ SendForm.onsubmit = async (e) => {
     }
     SendModal.close()
 }
+
+
+
+
+
+
+
 
 
 
